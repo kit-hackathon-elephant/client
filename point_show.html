@@ -1,0 +1,22 @@
+<!--
+    基本ここをコピーして新しいhtmlを作成し、適時ページタイトルを編集し、menu.htmlにコピーして作成したhtmlを追加する。
+-->
+<ons-page>
+	<ons-toolbar>
+	    <div class="left">
+	        <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="fa-bars"></ons-icon></ons-toolbar-button>
+	    </div>
+	    <div class="center">保有ポイント</div>
+	</ons-toolbar>
+
+	<!-- ここに記述していく -->
+    <div style="text-align: center; padding-top: 10px">
+        <section style="padding: 40px 10px 10px">
+            <div id="point" style="font-size: 40px"></div>
+		    <p>ポイント</p>
+        </section>
+        <section style="padding: 0 8px 8px">
+            <button class="button" onClick="getPoint();" style="width: 100%">更新</button>
+        </section>
+    </div>
+</ons-page>

@@ -1,0 +1,66 @@
+<!--
+    基本ここをコピーして新しいhtmlを作成し、適時ページタイトルを編集し、menu.htmlにコピーして作成したhtmlを追加する。
+-->
+<ons-page>
+    <ons-toolbar>
+	    <div class="left">
+	        <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="fa-bars"></ons-icon></ons-toolbar-button>
+	    </div>
+	    <div class="center">プロフィール登録</div>
+	</ons-toolbar>
+
+    <div style="text-align: center">
+    
+        <ul class="list">
+            <li class="list__header">ニックネーム</li>
+        </ul>
+        <section style="padding: 8px;margin: 8px">
+            <textarea type="text" class="textarea" id="my-input" ng-model="text1" rows="1" placeholder="ニックネーム" style="width: 100%">
+            </textarea>
+        </section>
+
+        <ul class="list" style="margin-bottom: 8px">
+            <li class="list__header">性別</li>
+        </ul>
+
+        <label><input type="radio" name="repeat" value="1" checked>男性</label>
+        <label><input type="radio" name="repeat" value="2">女性</label>
+        
+        <ul class="list" style="margin-top: 8px">
+            <li class="list__header">生年月日</li>
+        </ul>
+        <section style="padding: 8px;margin: 8px">
+            <textarea type="text" class="textarea" id="my-input" ng-model="text3" rows="1" placeholder="生年月日(西暦)" style="width: 100%;"></textarea>
+        </section>
+        
+        <ul class="list">
+            <li class="list__header">自由記述</li>
+        </ul>
+        <section style="padding: 8px;margin: 8px">
+            <textarea class="textarea" ng-model="text2" id="my-input" placeholder="自由に書いてね" style="width: 100%; height: 100px;"></textarea>
+        </section>
+        
+        <!--
+        <input type="button" onclick="getPhoto()"; value="画像を選択"><br/>
+        <img style="display:none;" id="picture" src="" width="150" height="150" />
+        -->
+        
+        <ul class="list">
+            <li class="list__header">facebook ID</li>
+        </ul>
+        <section style="padding: 8px;margin: 8px">
+            <textarea type="text" class="textarea" id="my-input" ng-model="text4" rows="1" placeholder="facebook ID" style="width: 100%"></textarea>
+        </section>
+    
+        <ul class="list">
+            <li class="list__header">Twitter ID</li>
+        </ul>
+        <section style="padding: 8px;margin: 8px">
+            <textarea type="text" class="textarea" id="my-input" ng-model="text5" rows="1" placeholder="twitter ID" style="width: 100%"></textarea>
+        </section>
+        <section style="padding: 0 8px 8px">
+            <button modifier="large" onClick="makeJsonProfile()" class="button" style="width:100%">送信</button>
+        </section>
+</div>
+
+</ons-page>

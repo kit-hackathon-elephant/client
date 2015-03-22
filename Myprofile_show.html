@@ -1,0 +1,40 @@
+<!--
+    基本ここをコピーして新しいhtmlを作成し、適時ページタイトルを編集し、menu.htmlにコピーして作成したhtmlを追加する。
+-->
+<ons-page>
+	<ons-toolbar>
+	    <div class="left">
+	        <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="fa-bars"></ons-icon></ons-toolbar-button>
+	    </div>
+	    <div class="center">Profile</div>
+	</ons-toolbar>
+
+		<!-- ここに記述していく -->
+    <div style="margin: 5% 25%;">
+        <ons-col width="50%">
+            <img src="image/noImage.jpg" width="200" height="200" class="thumbnail">
+        </ons-col>
+    </div>
+        
+      <div class="profile-card">
+        <ul class="list">
+            <li class="list__header">ニックネーム</li>
+            <li class="list__item" style="text-align: center"><span><div id="nickname"></div></span></li>
+            <li class="list__header">twitter_ID</li>
+            <li class="list__item" style="text-align: center"><span><div id="twitter"></div></span></li>
+            <li class="list__header">facebook_ID</li>
+            <li class="list__item" style="text-align: center"><span><div id="facebook"></div></apsn></li>
+            <li class="list__header">自己紹介</li>
+            <li class="list__item" style="text-align: center"><span><div id="free"></div></span></li>
+            <li class="list__header">生年月日</li>
+            <li class="list__item" style="text-align: center"><span><div id="birthday"></div></span></li>
+      </div>
+
+    <section style="padding: 0 8px 8px">
+    <ons-button modifier="large" onclick="getProfile();">更新</ons-button>
+     
+    <!--<ons-list-item modifier="chevron" onclick="myNavigator.pushPage('ProfileEntry.html', { animation : 'none' } )">編集</ons-list-item>
+    -->
+    </section> 
+</div>
+</ons-page>
